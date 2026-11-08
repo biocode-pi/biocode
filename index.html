@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biocode · Software para o agro</title>
+  <meta name="description" content="Biocode é uma equipe de quatro desenvolvedores especializada em aplicações web e mobile para o setor agro.">
+  <meta name="theme-color" content="#16261C">
+  <meta property="og:title" content="Biocode · Software para o agro">
+  <meta property="og:description" content="Aplicações web e mobile para o setor agro.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="assets/biocode-logo.png">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Montserrat:wght@600&family=JetBrains+Mono:wght@400;500&family=Young+Serif&family=Lato:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="wrap topo__inner">
+      <a class="marca" href="#" aria-label="Biocode, início">
+        <img class="marca__logo" src="assets/biocode-logo.png" width="566" height="441" alt="">
+      </a>
+      <nav aria-label="Seções">
+        <ul class="menu">
+          <li><a href="#quem-somos">Quem somos</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a class="menu__cta" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="hero-titulo">
+      <div class="wrap hero__inner">
+        <div class="hero__texto">
+          <p class="etiqueta"><span>Equipe de desenvolvimento</span><span>Registro · SP</span></p>
+          <h1 id="hero-titulo">Software que cresce junto com o campo.</h1>
+          <p class="hero__lead">Somos a Biocode. Criamos aplicações web e mobile para o setor agro, pensadas para quem trabalha na terra, no manejo e na produção.</p>
+          <div class="hero__acoes">
+            <a class="botao" href="#projetos">Ver o Smart Hive</a>
+            <a class="botao botao--linha" href="mailto:biocodedev@gmail.com">Falar com a equipe</a>
+          </div>
+        </div>
+
+        <figure class="planta" aria-hidden="true">
+          <svg viewBox="0 0 400 520">
+            <defs>
+              <path id="caule" d="M200 500 C 200 420, 150 380, 175 300 S 250 200, 205 110 S 190 40, 215 20" />
+              <mask id="crescer" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="520">
+                <path class="planta__crescer" pathLength="1" d="M200 500 C 200 420, 150 380, 175 300 S 250 200, 205 110 S 190 40, 215 20" />
+              </mask>
+            </defs>
+            <line class="planta__solo" x1="40" y1="500" x2="360" y2="500" />
+            <path class="planta__raiz" d="M200 500 q -30 10 -60 6 M200 500 q 25 14 70 8 M200 500 q 4 12 -6 18" />
+            <g class="planta__corpo">
+              <g class="planta__folhas">
+                <path class="folha folha--1" d="M178 300 c -50 -10 -80 -40 -90 -80 c 45 0 80 30 90 80 Z" />
+                <path class="folha folha--2" d="M222 205 c 45 -15 75 -45 85 -90 c -45 5 -80 40 -85 90 Z" />
+                <path class="folha folha--3" d="M205 115 c -35 -5 -60 -30 -65 -60 c 35 2 60 25 65 60 Z" />
+                <path class="folha folha--4" d="M190 400 c 40 -5 70 -30 80 -65 c -40 2 -70 30 -80 65 Z" />
+              </g>
+              <g mask="url(#crescer)">
+                <use href="#caule" class="planta__caule" />
+                <text class="planta__codigo"><textPath href="#caule" startOffset="6">const raiz = "Biocode"; plantar(ideia) → web + mobile;</textPath></text>
+              </g>
+              <path class="folha folha--topo" d="M198 2 h30 c11 0 15 9 10 16 l-22 32 -24 -40 c-3 -5 0 -8 6 -8 Z" />
+            </g>
+          </svg>
+        </figure>
+      </div>
+    </section>
+
+    <section id="quem-somos" class="secao" aria-labelledby="quem-titulo">
+      <div class="wrap duas-colunas">
+        <div class="quem__titulo">
+          <h2 id="quem-titulo">Quem somos</h2>
+          <img class="quem__logo" src="assets/biocode-logo.png" width="566" height="441" alt="Logo da Biocode" loading="lazy">
+        </div>
+        <div class="prosa">
+          <p>A Biocode é uma equipe de quatro desenvolvedores especializada em aplicações web e mobile para o setor agro. Somos os criadores do <strong>Smart Hive</strong>, plataforma de monitoramento de meliponários.</p>
+          <p>Escolhemos o agro como foco porque é ali que a tecnologia ainda tem muito espaço para facilitar o dia a dia: acompanhar a produção, registrar o manejo e tomar decisões com dados na mão.</p>
+        </div>
+      </div>
+
+      <div class="wrap frentes">
+        <article class="frente">
+          <p class="frente__rotulo">Web</p>
+          <h3>Plataformas web</h3>
+          <p>Painéis e sistemas acessados pelo navegador, para organizar informações da produção e acompanhar tudo de qualquer computador.</p>
+        </article>
+        <article class="frente">
+          <p class="frente__rotulo">Mobile</p>
+          <h3>Aplicativos mobile</h3>
+          <p>Apps para levar no bolso até o campo, feitos para uso rápido por quem está com a mão na massa.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projetos" class="secao projeto" aria-labelledby="projeto-titulo">
+      <div class="wrap projeto__inner">
+        <div class="projeto__texto">
+          <p class="projeto__rotulo">Projeto em destaque</p>
+          <h2 id="projeto-titulo">Smart Hive</h2>
+          <p>Plataforma web e aplicativo mobile para monitoramento de meliponários. O Smart Hive ajuda meliponicultores a acompanhar suas colmeias de abelhas nativas sem ferrão e a registrar o manejo de cada uma.</p>
+          <ul class="projeto__tags" aria-label="Formatos">
+            <li>Plataforma web</li>
+            <li>App mobile</li>
+            <li>Meliponicultura</li>
+          </ul>
+          <a class="botao botao--mel" href="https://www.smarthive.app.br" target="_blank" rel="noopener">Acessar smarthive.app.br<span class="sr-only"> (abre em nova aba)</span></a>
+        </div>
+        <div class="projeto__logo">
+          <img src="assets/smarthive-logo.png" width="320" height="320" alt="Logo do Smart Hive" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="equipe" class="secao" aria-labelledby="equipe-titulo">
+      <div class="wrap">
+        <h2 id="equipe-titulo">Equipe</h2>
+        <ul class="equipe">
+          <li class="pessoa">
+            <span class="pessoa__inicial" aria-hidden="true">BD</span>
+            <h3>Bruno Davies</h3>
+            <p>Desenvolvedor</p>
+            <a href="https://github.com/BrunoDavies3" target="_blank" rel="noopener">github.com/BrunoDavies3</a>
+          </li>
+          <li class="pessoa">
+            <span class="pessoa__inicial" aria-hidden="true">BE</span>
+            <h3>Bruno Eduardo</h3>
+            <p>Desenvolvedor</p>
+            <a href="https://github.com/bruno-edlp" target="_blank" rel="noopener">github.com/bruno-edlp</a>
+          </li>
+          <li class="pessoa">
+            <span class="pessoa__inicial" aria-hidden="true">LR</span>
+            <h3>Leonardo Ribeiro</h3>
+            <p>Desenvolvedor</p>
+            <a href="https://github.com/Leo-Vitorino" target="_blank" rel="noopener">github.com/Leo-Vitorino</a>
+          </li>
+          <li class="pessoa">
+            <span class="pessoa__inicial" aria-hidden="true">MR</span>
+            <h3>Mauricio Rafael</h3>
+            <p>Desenvolvedor</p>
+            <a href="https://github.com/MauricioRVeiga" target="_blank" rel="noopener">github.com/MauricioRVeiga</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contato" class="secao contato" aria-labelledby="contato-titulo">
+      <div class="wrap">
+        <h2 id="contato-titulo">Tem uma ideia para o campo?</h2>
+        <p>Conte para a gente o que você precisa, por e-mail ou WhatsApp.</p>
+        <ul class="contato__canais">
+          <li>
+            <span class="contato__rotulo">E-mail</span>
+            <a class="contato__link" href="mailto:biocodedev@gmail.com">biocodedev@gmail.com</a>
+          </li>
+          <li>
+            <span class="contato__rotulo">WhatsApp</span>
+            <a class="contato__link" href="https://wa.me/5513996862814?text=Ol%C3%A1%2C%20Biocode!" target="_blank" rel="noopener">(13) 99686-2814<span class="sr-only"> (abre o WhatsApp em nova aba)</span></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="wrap rodape__inner">
+      <p>© 2026 Biocode</p>
+    </div>
+  </footer>
+
+  <script>
+    const topo = document.querySelector('.topo');
+    const marcarRolagem = () => topo.classList.toggle('topo--rolado', window.scrollY > 4);
+    window.addEventListener('scroll', marcarRolagem, { passive: true });
+    marcarRolagem();
+
+    const planta = document.querySelector('.planta');
+    new IntersectionObserver(([entrada]) => {
+      planta.classList.toggle('planta--pausada', !entrada.isIntersecting);
+    }).observe(planta);
+
+    const links = [...document.querySelectorAll('.menu a[href^="#"]')];
+    const observarSecao = new IntersectionObserver((entradas) => {
+      for (const entrada of entradas) {
+        if (!entrada.isIntersecting) continue;
+        for (const link of links) {
+          if (link.hash === '#' + entrada.target.id) link.setAttribute('aria-current', 'true');
+          else link.removeAttribute('aria-current');
+        }
+      }
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    observarSecao.observe(document.querySelector('.hero'));
+    links.forEach((link) => observarSecao.observe(document.querySelector(link.hash)));
+  </script>
+</body>
+</html>
